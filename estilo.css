@@ -1,0 +1,462 @@
+
+/* pagina principal*/
+
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Menú */
+.menu {
+  background-color: #003366;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+}
+
+.menu .logo {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f4c10f;
+}
+
+/* Buscador */
+#search {
+  display: block;
+  margin: 30px auto 10px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garantiza que el footer esté al fondo */
+}
+
+.universidades {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-image: url('img/uni.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+ 
+}
+
+.card-container {
+ display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Solo 3 por línea */
+  gap: 1.5rem; /* Espacio entre tarjetas */
+  padding: 1.5rem;
+}
+
+.card1{
+  background-image: url('img/AUTONOMA.jpg');
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+
+.card1:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+
+.card2 {
+  background-image: url('img/IMG-20241010-WA0037.png');
+ height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card2:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card3 {
+  background-image: url('img/uph.jpg');
+ height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card3:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card4 {
+    background-image: url('img/pedagocica.jpg');
+ height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card4:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card5 {
+  background-image: url('img/ceutec.jpg');
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card5:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card6 {
+  background-image: url('img/ujcv.jpg');
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card6:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card7 {
+  background-image: url('img/unicah.jpg');
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card7:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card8 {
+  background-image: url('img/metropolitana.jpeg');
+ height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card8:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card9 {
+  background-image: url('img/uth.jpg');
+ height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card9:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+.card10 {
+  background-image: url('img/cedac.jpeg');
+ height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 520px; /* Aumenta el alto */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.card10:hover {
+  transform: scale(1.03); /* Efecto visual al pasar el cursor */
+}
+
+
+.card1 h2 {
+  color: #2d04e4;
+}
+.card2 h2 {
+  color: #d10505;
+}
+.card3 h2 {
+  color: #003366;
+}
+.card4 h2 {
+  color: #d8be67;
+}
+.card5 h2 {
+  color: #ff0000;
+}
+.card6 h2 {
+  color: #003366;
+}
+.card7 h2 {
+  color: #f07026;
+}
+.card8 h2 {
+  color: #3a3535;
+}
+.card9 h2 {
+  color: #f4f816;
+}
+.card10 h2 {
+  color: #f4f816;
+}
+
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card1  ul {
+  list-style: none;
+  padding: 0;
+}
+.card2 ul {
+  list-style: none;
+  padding: 0;
+}
+.card3 ul {
+  list-style: none;
+  padding: 0;
+}
+.card4  ul {
+  list-style: none;
+  padding: 0;
+}
+.card5 ul {
+  list-style: none;
+  padding: 0;
+}
+.card6 ul {
+  list-style: none;
+  padding: 0;
+}
+.card7  ul {
+  list-style: none;
+  padding: 0;
+}
+.card8 ul {
+  list-style: none;
+  padding: 0;
+}
+.card9 ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+ background-color: #001f3f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 170px;
+  margin: 15px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f4c10f;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 6px 0;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #f4c10f;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+.boton-ola {
+   background-color: #0074D9;      /* Azul vibrante */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;            /* Botón redondeado */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.boton-ola:hover {
+    background-color: #005fa3;      /* Azul más oscuro al pasar el cursor */
+  transform: scale(1.05);         /* Efecto sutil de agrandamiento */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+#visor {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding-top: 10px;
+}

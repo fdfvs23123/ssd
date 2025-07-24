@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal de Universidades</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <div class="logo">Mi Futuro HN</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="formulario 4 kennethjimenez.html">Contactenos</a></li>
+      <li><a href="index2.php">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+  <br>
+<div style="display: flex; gap: 10px; align-items: center;">
+  <input type="text" id="search" placeholder="Busca una universidad o carrera">
+
+ <select id="selectorUniversidades" style="padding: 10px;">
+  <option value="">Selecciona una universidad</option>
+  <option value="publica">Públicas</option>
+  <option value="privada">Privadas</option>
+</select>
+</div>
+  
+ <div class="wrapper">
+  <section class="universidades">
+<div class="card-container">
+    <div class="card1 universidad publica" data-nombre="unah autonoma nacional honduras">
+      <h2>UNAH</h2>
+      <h2>Universidad Nacional Autónoma de Honduras</h2>
+      <ul>
+       
+      </ul>
+  <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+
+    <div class="card2 universidad privada" data-nombre="unitec Tecnológica Centroamericana">
+      <h2>UNITEC</h2>
+      <h2>Universidad Tecnológica Centroamericana</h2>
+      <ul>
+
+      </ul>
+      <button class="boton-ola" onclick="window.location.href='United.html'">Ir a carrera</button>
+    </div>
+
+    <div class="card3 universidad privada" data-nombre="uph Politécnica ">
+      <h2>UPH</h2>
+      <h2>Universidad Politécnica de Honduras</h2>
+      <ul>
+
+            </ul>
+     <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+    </div>
+    
+    <div class="card4 universidad publica" data-nombre="upnfm pedagógica nacional francisco morazán">
+      <h2>UPNFM</h2>
+      <h2>Universidad Pedagógica Nacional Francisco Morazán</h2>
+      <ul>
+       
+      </ul>
+   <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+
+    
+    <div class="card5 universidad privada" data-nombre="ceutec centro universitario tecnológico">
+      <h2>CEUTEC</h2>
+      <h2>Centro Universitario Tecnológico</h2>
+      <ul>
+       
+      </ul>
+    <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+
+    
+    <div class="card6 universidad privada" data-nombre="ujcv josé cecilio del valle">
+      <h2>UJCV</h2>
+      <h2>Universidad José Cecilio del Valle</h2>
+      <ul>
+       
+      </ul>
+    <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+
+    
+    <div class="card7 universidad privada"  data-nombre="unicah catolica ">
+      <h2>UNICAH</h2>
+      <h2>Universidad Católica de Honduras "Nuestra Señora Reina de la Paz"</h2>
+      <ul>
+       
+      </ul>
+    <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+
+    
+    <div class="card8 universidad privada"  data-nombre="upi politecnica ingenieria">
+      <h2>UMH</h2>
+      <h2>Universidad Metropolitana de Honduras</h2>
+      <ul>
+       
+      </ul>
+   <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+
+     <div class="card9 universidad privada"  data-nombre="uth tecnologica">
+      <h2>UTH</h2>
+      <h2>Universidad Tecnológica de Honduras </h2>
+      <ul>
+       
+      </ul>
+   <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+
+    <div class="card10 universidad privada" data-nombre="unah autonoma nacional honduras">
+      <h2>CEDAC</h2>
+      <h2>Centro de Diseño, Arquitectura y Construcción</h2>
+      <ul>
+       
+      </ul>
+  <button class="boton-ola" onclick="cargarUniversidad('unah.html')">Más información</button>
+
+    </div>
+    </div>
+    <div id="visor" style="display: none; width: 100%; height: 500px;"></div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Universidad</h4>
+        <ul>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Misión y Visión</a></li>
+          <li><a href="#">Autoridades</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Comunicación</h4>
+        <ul>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Revista</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Tegucigalpa: col. Kennedy</li>
+          <li>Tel: (504) 2234-5678</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 kennet marcos jorge nataly </p>
+    </div>
+  </footer>
+ </div>
+
+ <script>
+  const normalizar = texto =>
+    texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+
+  const buscador = document.getElementById('search');
+  const universidades = document.querySelectorAll('.universidad');
+
+  buscador.addEventListener("input", () => {
+    const entrada = normalizar(buscador.value);
+    universidades.forEach(uni => {
+      const keywords = normalizar(uni.getAttribute("data-nombre") || "");
+      uni.style.display = keywords.includes(entrada) ? "block" : "none";
+    });
+
+   
+    document.getElementById("visor").style.display = "none";
+  });
+
+
+   const selector = document.getElementById("selectorUniversidades");
+  const universidad = document.querySelectorAll(".universidad");
+
+  selector.addEventListener("change", function () {
+    const tipo = selector.value;
+
+    universidades.forEach(uni => {
+      if (tipo === "") {
+        uni.style.display = "block";
+      } else {
+        uni.style.display = uni.classList.contains(tipo) ? "block" : "none";
+      }
+    });
+  });
+  </script>
+</body>
+</html>

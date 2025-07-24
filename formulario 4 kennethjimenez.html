@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Segundo ejericio de formulario</title>
+</head>
+<body bgcolor="orange">
+    <font><h1 align="center">FORMULARIO COMPLETO</h1></font>
+    <form action="procesa.php" method="post">
+        <table align="center" bordercolor="#FFCC00" border="1" cellspacig="10">
+            <tr>
+                <td> Texto: </td>
+                <td><input type="text" name="texto1"></td>
+                <td>password</td>
+                <td><input type="password" name="pass"></td>
+                <tr>
+                <tr>
+                    <td>Textarea:</td>
+                    <td colspan="3"><textarea rows="7" cols="55"></textarea></td>
+                </tr>
+                    <tr>
+                    <td>Campo check 1:<input type="checkbox" values="1"><br>
+                    <td>Campo check 2:<input type="checkbox" values="2"><br>
+                    <td>Campo check 3:<input type="checkbox" values="3">
+                    </tr>
+
+                    <td align="middle">Radio 1:<input type="radio" value="1"><br>
+                        Radio 2:<input type="radio" values="2">
+                    </td>
+                    <td valign="top">selección:<select name="seleccion">
+                        <option>primera</option>
+                        <option>segunda</option>
+                    </select> </td> <td align="center">selección multiple:<br>
+                        <select name="seleccion" multiple>
+                            <option>primera</option> 
+                            <option>segunda</option>
+                            <option>tercera</option> 
+                        </select>
+                    </td>
+                </tr> 
+            </table><br>
+            <div align="center">
+                <input type="button" value="Boton">
+                <input type="reset" value="Iniciar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </body>
+    </html>
